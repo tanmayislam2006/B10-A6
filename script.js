@@ -240,23 +240,23 @@ function details(petId) {
   detailsCard.classList.remove("hidden");
   detailsCard.classList.add("block");
   detailsCard.innerHTML = `
-        <div class="fixed inset-0 z-10 bg-black bg-opacity-20 flex justify-center h-max">
+        <div class="fixed inset-0 z-10 bg-black bg-opacity-20 flex justify-center h-max ">
             <div class="max-w-lg p-2 rounded-xl border border-bordercolor bg-white">
                 <div class="rounded-lg p-2 w-full"><img src=${pet.image} class="w-full" alt=""></div>
                 <!-- text content  -->
-                <div class="my-3 ">
+                <div class=" ">
                     <h3 class="font-bold text-lg">${pet.breed}</h3>
-                    <p class="my-3 text-gray-500 flex gap-2"><img src="https://img.icons8.com/ios/20/diversity.png"
+                    <p class="my-1 text-gray-500 flex gap-2"><img src="https://img.icons8.com/ios/20/diversity.png"
                             alt="">Breed : <span id="bread-name">${pet.breed}</span></p>
-                    <p class="my-3 text-gray-500 flex gap-2"><img
+                    <p class="my-1 text-gray-500 flex gap-2"><img
                             src="https://img.icons8.com/material-two-tone/24/calendar--v1.png" alt="">Birth: <span
                             id="date-of-birth">${pet.date_of_birth}</span></p>
-                    <p class="my-3 text-gray-500 flex gap-2"><img src="https://img.icons8.com/ios/20/gender.png"
+                    <p class="my-1 text-gray-500 flex gap-2"><img src="https://img.icons8.com/ios/20/gender.png"
                             alt="">Male : <span id="male-info">${pet.gender}</span></p>
-                    <p class="my-3 text-gray-500 flex gap-2">$ Price : <span id="price-info">${pet.price}</span></p>
-                    <h3 class="font-bold text-lg my-3 ">Details</h3>
+                    <p class="my-1 text-gray-500 flex gap-2">$ Price : <span id="price-info">${pet.price}</span></p>
+                    <h3 class="font-bold text-lg my-1 ">Details</h3>
                     <p class="text-gray-500">${pet.pet_details}</p>
-                    <div class="w-full mx-auto my-5"><button onclick="goBack()" class="py-2 px-4 rounded-lg text-primary w-full border">Go Back</button></div> 
+                    <div class="w-full mx-auto my-1"><button onclick="goBack()" class="py-2 px-4 rounded-lg text-primary w-full border">Go Back</button></div> 
                 </div>
             </div>
         </div>`;
