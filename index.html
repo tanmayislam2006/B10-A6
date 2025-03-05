@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Donate</title>
-        <!-- another google font  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <!-- google font  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-    
-        <!-- tailwind and daisyUi lin -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <!-- tailwind script -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: '#da373d',
-                            primary: '#0E7A81',
-                            'primary-bg': '#FFEEE6',
-                            'header-bg': '#FFF9F4',
-                            'footer-bg': '#0',
-                            'bordercolor': '#E9E9E9',
-    
-                        },
-                        fontFamily: {
-                            primary: ["Lato", "sans-serif"],
-                        },
-                        backgroundImage: {
-                            'bg': "url('')",
-    
-                        },
-                    }
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <!-- another google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind and daisyUi lin -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#0E7A81',
+                        'primary-bg': '#FFEEE6',
+                        'header-bg': '#FFF9F4',
+                        'footer-bg': '#0',
+                        'bordercolor': '#E9E9E9',
+
+                    },
+                    fontFamily: {
+                        primary: ["Lato", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'bg': "url('')",
+
+                    },
                 }
             }
-        </script>
-    </head>
-<body class="font-primary">
-    <h2 class=" text-primary">dsfsfsf</h2>
+        }
+    </script>
+</head>
+
+<body class="font-primary max-w-7xl">
+    <header class="max-w-6xl">
+        <nav class="flex justify-around items-center my-3">
+            <!-- logo and text -->
+            <div class="flex">
+                <div class="flex items-center gap-2">
+                    <!-- image  -->
+                    <div class=""><img src="./images/logo.webp " alt=""></div>
+                    <h3 class="text-3xl font-bold">Peddy</h3>
+                </div>
+            </div>
+            <!-- navigation link  -->
+            <div class="">
+                <ul class="flex gap-x-4">
+                    <li class="text-mf text-gray-500 font-medium"><a href="" class="">Home</a></li>
+                    <li class="text-mf text-gray-500 font-medium"><a href="" class="">Shop</a></li>
+                    <li class="text-mf text-gray-500 font-medium"><a href="" class="">Contact</a></li>
+                </ul>
+            </div>
+            <!-- user button  -->
+            <div class="">
+                <button class="rounded-full p-1 border-2  "><img src="https://img.icons8.com/material-rounded/24/user.png"
+                        alt=""></button>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
