@@ -267,15 +267,17 @@ function goBack() {
   detailsCard.classList.remove("block");
   detailsCard.classList.add("hidden");
 }
-
 const catCatagory = document.getElementById("cat-catagory");
 catCatagory.addEventListener("click", event => {
   const cat = pets.filter(p => p.category === "Cat");
   const parent = document.getElementById("push-cointainer");
-  parent.innerHTML = ""; // Clear the container before appending new elements
-
+  parent.innerHTML='';
+  // console.log(parent);
   for (let pet of cat) {
+    // parent.innerHTML=""
     const div = document.createElement("div");
+    // console.log(div);
+    // console.log(pet);
     div.innerHTML = `
         <div class="shadow-sm p-3 border border-bordercolor rounded-lg">
             <!-- image  -->
@@ -301,8 +303,9 @@ catCatagory.addEventListener("click", event => {
                 <button onclick="details(${pet.petId})" class="text-primary border px-2 py-1 rounded-lg">Details</button>
             </div>
         </div>`;
-    parent.appendChild(div);
-  }
+        parent.appendChild(div);
+      }
+
 });
 
 
