@@ -240,8 +240,8 @@ function details(petId) {
   detailsCard.classList.remove("hidden");
   detailsCard.classList.add("block");
   detailsCard.innerHTML = `
-        <div class="fixed inset-0 z-10 bg-black bg-opacity-20 flex justify-center itmes-center h-max ">
-            <div class="max-w-lg p-2 rounded-xl border border-bordercolor bg-white">
+        <div class="fixed inset-0 z-10 bg-black bg-opacity-20 flex justify-center itmes-center  ">
+            <div class="max-w-lg p-2 py-20 rounded-xl border border-bordercolor bg-white overflow-y-auto h-96">
                 <div class="rounded-lg p-2 w-full"><img src=${pet.image} class="w-full" alt=""></div>
                 <!-- text content  -->
                 <div class=" ">
